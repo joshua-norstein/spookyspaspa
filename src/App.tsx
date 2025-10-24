@@ -203,18 +203,37 @@ export default function App() {
   return (
     <div className="min-h-screen bg-black text-zinc-200" style={{ backgroundImage: spiderwebBackground }}>
       {/* Header */}
-      <header className="border-b border-zinc-800 bg-black/80 backdrop-blur-sm sticky top-0 z-10">
-        <div className="container mx-auto px-6 py-6">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-3">
-              <div>
-                <h1 className="tracking-wider text-orange-200" style={{ textShadow: '0 0 20px rgba(255, 165, 100, 0.5), 0 0 40px rgba(255, 140, 80, 0.3)' }}>SpookyArtSpa</h1>
-                <p className="text-xs tracking-widest text-zinc-500 uppercase">Luxury for the Gothically Inclined</p>
-              </div>
-            </div>
-          </div>
+<header className="border-b border-zinc-800 bg-black/80 backdrop-blur-sm sticky top-0 z-10">
+  <div className="container mx-auto px-6 py-6">
+    <div className="flex items-center justify-between">
+      
+      {/* Left side: logo + tagline */}
+      <div className="flex items-center gap-3">
+        <div>
+          <h1
+            className="tracking-wider text-orange-200"
+            style={{
+              textShadow:
+                '0 0 20px rgba(255, 165, 100, 0.5), 0 0 40px rgba(255, 140, 80, 0.3)',
+            }}
+          >
+            SpookyArtSpa
+          </h1>
+          <p className="text-xs tracking-widest text-zinc-500 uppercase">
+            Luxury for the Gothically Inclined
+          </p>
         </div>
-      </header>
+      </div>
+
+      {/* Right side: My Collection button */}
+      <button
+  className="px-6 py-2.5 rounded-full border transition-all duration-300 bg-zinc-900/40 border-zinc-700/50 text-zinc-400 hover:border-indigo-500/40 hover:text-indigo-300 hover:bg-zinc-800/60"
+>
+  My Collection
+</button>
+    </div>
+  </div>
+</header>
 
       {/* Hero Section */}
       <section className="border-b border-zinc-800 bg-gradient-to-b from-zinc-900/80 to-transparent relative z-[1]">
@@ -265,13 +284,22 @@ export default function App() {
       </main>
 
       {/* Footer */}
-      <footer className="border-t border-zinc-800 bg-black/60 mt-16">
-        <div className="container mx-auto px-6 py-8 text-center">
-          <p className="text-sm text-zinc-500 tracking-wider">
-            © 2025 SpookyArtSpa. Where darkness meets design.
-          </p>
-        </div>
-      </footer>
+<footer className="border-t border-zinc-800 bg-black/60 mt-16">
+  <div className="container mx-auto px-6 py-8 flex justify-between items-start">
+    {/* Left column */}
+    <div>
+      <p className="text-sm text-zinc-500 tracking-wider">SpookyArtSpa</p>
+      <p>(585) 254-5110</p>
+      <p>contact@spookyartspa.com</p>
+    </div>
+
+    {/* Right column */}
+    <div className="text-right">
+      <p className="text-sm text-zinc-500">© 2025 SpookyArtSpa. Where darkness meets design.</p>
+    </div>
+  </div>
+</footer>
+
 
       {/* Product Dialog */}
       <ProductDialog
