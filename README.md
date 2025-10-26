@@ -2,9 +2,7 @@
   # Spooky Art Spa SPA
 
   **Collaborators:**
-  Joshua Norstein
-  Emma Goodman
-  John Scialpi
+  Joshua Norstein, Emma Goodman, John Scialpi
 
   ## Running the code
 
