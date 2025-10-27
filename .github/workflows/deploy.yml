@@ -1,22 +1,50 @@
-name: Deploy to NFSN
-
-    on:
-      push:
-        branches:
-          - main # Or your main branch
+name: Deploy to NearlyFreeSpeech.net
+on: 
+    push: 
+        branches: [main]
 
     jobs:
-      deploy:
+      build-and-deploy:
         runs-on: ubuntu-latest
         steps:
-          - name: Checkout code
-            uses: actions/checkout@v3
+          - uses: actions/checkout@v4
+            - name: Use Node.js
+    uses: actions/setup-node@v4
+    with:
+      node-version: 20
 
-          - name: Deploy to NFSN
-            uses: easingthemes/ssh-deploy@main
-            with:
-              ssh_host: ${{ secrets.NFSN_HOSTNAME }}
-              ssh_user: ${{ secrets.NFSN_USERNAME }}
-              ssh_pass: ${{ secrets.NFSN_PASSWORD }}
-              remote_path: '/public/html' # Adjust to your site's web directory
-              local_path: './*' # Or specific build output directory
+  - name: Install dependencies
+    run: npm ci
+
+  - name: Build
+    run: npm run build
+
+  - name: Install sshpass & rsync
+    run: |
+      sudo apt-get update
+      sudo apt-get install -y sshpass rsync
+
+  - name: Deploy to NFSN via rsync+sshpass
+    env:
+      NFSN_HOST: ${{ secrets.NFSN_HOST }}
+      NFSN_USER: ${{ secrets.NFSN_USER }}
+      NFSN_PASSWORD: ${{ secrets.NFSN_PASSWORD }}
+      NFSN_PORT: ${{ secrets.NFSN_PORT }}
+      TARGET_DIR: ${{ secrets.NFSN_TARGET_DIR }}
+    run: |
+      set -e
+      # Set the local build directory. Change ./dist/ if your build writes elsewhere.
+      BUILD_DIR=./dist/
+      if [ ! -d "$BUILD_DIR" ]; then
+        echo "Build output not found at $BUILD_DIR"
+        ls -la
+        exit 1
+      fi
+      # Build SSH options. Disable host key checking so GitHub runner won't pause for user input.
+      SSH_OPTS="-o StrictHostKeyChecking=no"
+      if [ -n "${NFSN_PORT}" ]; then
+        SSH_OPTS="$SSH_OPTS -p ${NFSN_PORT}"
+      fi
+      # Use sshpass to pass password to rsync over ssh
+      RSYNC_RSH="sshpass -p '${NFSN_PASSWORD}' ssh $SSH_OPTS"
+      rsync -avz --delete -e "$RSYNC_RSH" "${BUILD_DIR}" "${NFSN_USER}@${NFSN_HOST}:${TARGET_DIR}"
