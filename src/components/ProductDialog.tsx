@@ -91,4 +91,8 @@ export function ProductDialog({ product, open, onOpenChange }: ProductDialogProp
       </DialogContent>
     </Dialog>
   );
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 2e93c97b10e8a134682f7f35e511c7aa23a36f87

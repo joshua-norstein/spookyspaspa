@@ -19,7 +19,10 @@ interface Product {
   themes: ThemeCategory[];
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2e93c97b10e8a134682f7f35e511c7aa23a36f87
 const themeCategories: { value: ThemeCategory | "all"; label: string }[] = [
   { value: "all", label: "All Aesthetics" },
   { value: "gothic", label: "Gothic" },
@@ -48,6 +51,7 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-black text-zinc-200" style={{ backgroundImage: spiderwebBackground }}>
+<<<<<<< HEAD
    
       {/* Header */}
 <header className="border-b border-zinc-800 bg-black/80 backdrop-blur-sm sticky top-0 z-10">
@@ -81,6 +85,21 @@ export default function App() {
     </div>
   </div>
 </header>
+=======
+      {/* Header */}
+      <header className="border-b border-zinc-800 bg-black/80 backdrop-blur-sm sticky top-0 z-10">
+        <div className="container mx-auto px-6 py-6">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-3">
+              <div>
+                <h1 className="tracking-wider text-orange-200" style={{ textShadow: '0 0 20px rgba(255, 165, 100, 0.5), 0 0 40px rgba(255, 140, 80, 0.3)' }}>SpookyArtSpa</h1>
+                <p className="text-xs tracking-widest text-zinc-500 uppercase">Luxury for the Gothically Inclined</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+>>>>>>> 2e93c97b10e8a134682f7f35e511c7aa23a36f87
 
       {/* Hero Section */}
       <section className="border-b border-zinc-800 bg-gradient-to-b from-zinc-900/80 to-transparent relative z-[1]">
@@ -115,6 +134,7 @@ export default function App() {
       </section>
 
       {/* Products Grid */}
+<<<<<<< HEAD
 <main className="container mx-auto px-6 py-12 relative z-[1]">
   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
     {filteredProducts.map((product) => (
@@ -147,6 +167,31 @@ export default function App() {
     </div>
   </div>
 </footer>
+=======
+      <main className="container mx-auto px-6 py-12 relative z-[1]">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {filteredProducts.map((product) => (
+            <ProductCard
+              key={product.id}
+              title={product.title}
+              category={product.category}
+              price={product.price}
+              image={product.image}
+              onClick={() => handleProductClick(product)}
+            />
+          ))}
+        </div>
+      </main>
+
+      {/* Footer */}
+      <footer className="border-t border-zinc-800 bg-black/60 mt-16">
+        <div className="container mx-auto px-6 py-8 text-center">
+          <p className="text-sm text-zinc-500 tracking-wider">
+            © 2025 SpookyArtSpa. Where darkness meets design.
+          </p>
+        </div>
+      </footer>
+>>>>>>> 2e93c97b10e8a134682f7f35e511c7aa23a36f87
 
       {/* Product Dialog */}
       <ProductDialog

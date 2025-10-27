@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
       "name": "Spooky Art Spa SPA",
       "version": "0.1.0",
       "private": true,
@@ -59,3 +60,17 @@
             "build": "vite build"
       }
 }
+=======
+  "name": "spookyspaspa",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
+}
+>>>>>>> 2e93c97b10e8a134682f7f35e511c7aa23a36f87

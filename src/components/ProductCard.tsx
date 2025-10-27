@@ -2,7 +2,10 @@ import { useState } from 'react';
 import { motion } from 'motion/react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2e93c97b10e8a134682f7f35e511c7aa23a36f87
 interface ProductCardProps {
   title: string;
   category: string;
@@ -11,6 +14,7 @@ interface ProductCardProps {
   onClick: () => void;
 }
 
+<<<<<<< HEAD
 
 
 export function ProductCard({ title, category, price, image, onClick }: ProductCardProps) {
@@ -23,6 +27,11 @@ export function ProductCard({ title, category, price, image, onClick }: ProductC
    <p>{price}</p>
   </div>
   
+=======
+export function ProductCard({ title, category, price, image, onClick }: ProductCardProps) {
+  const [isHovered, setIsHovered] = useState(false);
+
+>>>>>>> 2e93c97b10e8a134682f7f35e511c7aa23a36f87
   return (
     <motion.div
       className="cursor-pointer group"
@@ -60,6 +69,9 @@ export function ProductCard({ title, category, price, image, onClick }: ProductC
       </div>
     </motion.div>
   );
+<<<<<<< HEAD
 
   
+=======
+>>>>>>> 2e93c97b10e8a134682f7f35e511c7aa23a36f87
 }
