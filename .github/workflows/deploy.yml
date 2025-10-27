@@ -1,0 +1,22 @@
+name: Deploy to NFSN
+
+    on:
+      push:
+        branches:
+          - main # Or your main branch
+
+    jobs:
+      deploy:
+        runs-on: ubuntu-latest
+        steps:
+          - name: Checkout code
+            uses: actions/checkout@v3
+
+          - name: Deploy to NFSN
+            uses: easingthemes/ssh-deploy@main
+            with:
+              ssh_host: ${{ secrets.NFSN_HOSTNAME }}
+              ssh_user: ${{ secrets.NFSN_USERNAME }}
+              ssh_pass: ${{ secrets.NFSN_PASSWORD }}
+              remote_path: '/public/html' # Adjust to your site's web directory
+              local_path: './*' # Or specific build output directory
