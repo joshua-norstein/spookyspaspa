@@ -1,0 +1,147 @@
+[
+  {
+    "id": 1,
+    "title": "Dagger and Rose",
+    "category": "Gothic Photography",
+    "price": "$100",
+    "image": "https://images.pexels.com/photos/8206524/pexels-photo-8206524.png?_gl=1*13gfgj7*_ga*MTE1NjI2Mzk3NC4xNzYxMjczMDIw*_ga_8JE65Q40S6*czE3NjE0NTkyNzkkbzMkZzAkdDE3NjE0NTkyNzkkajYwJGwwJGgw",
+    "description": "A hauntingly beautiful photograph of a woman holding a dagger with a red rose.",
+    "details": [
+      "Photography by Chris Moklebust",
+      "Limited edition of 50 prints",
+      "Dark gothic imagery",
+      "High-quality archival paper"
+    ],
+    "dimensions": "18\" H × 12\" W",
+    "materials": "Photographic print on premium paper",
+    "themes": ["gothic romanticism", "gothic"]
+  },
+  {
+    "id": 2,
+    "title": "Handcrafted Gothic Skull",
+    "category": "Sculpture",
+    "price": "$40",
+    "image": "https://images.pexels.com/photos/5095880/pexels-photo-5095880.jpeg?_gl=1*1qi4r4z*_ga*MTE1NjI2Mzk3NC4xNzYxMjczMDIw*_ga_8JE65Q40S6*czE3NjE0NTkyNzkkbzMkZzEkdDE3NjE0NTkzOTEkajYwJGwwJGgw",
+    "description": "A beautifully crafted anatomical skull sculpture that captures the essence of gothic melancholy. The perfect accent for any dark and moody interior.",
+    "details": [
+      "Original handcrafted art",
+      "Detailed anatomical design",
+      "Certificate of authenticity included",
+      "Signed by the original artist"
+    ],
+    "dimensions": "18 cm H × 22 cm W",
+    "materials": "Clay, resin",
+    "themes": ["gothic", "unseelie court"]
+  },
+  {
+    "id": 3,
+    "title": "Serpent’s Door Handle",
+    "category": "Black and White Photography",
+    "price": "$75",
+    "image": "https://images.pexels.com/photos/15792494/pexels-photo-15792494.jpeg?_gl=1*5b0bjd*_ga*MTE1NjI2Mzk3NC4xNzYxMjczMDIw*_ga_8JE65Q40S6*czE3NjE0NTkyNzkkbzMkZzEkdDE3NjE0NTk0NTMkajYwJGwwJGgw",
+    "description": "An ornate black-and-white photograph of a serpent-shaped door knocker framed with baroque flourishes.",
+    "details": [
+      "Authentic Victorian design",
+      "Hand-carved ornamental frame",
+      "Gothic serpent motif",
+      "Fine art black-and-white photography"
+    ],
+    "dimensions": "42\" H × 28\" W",
+    "materials": "Carved stone, aged bronze finish",
+    "themes": ["gothic", "unseelie court"]
+  },
+  {
+    "id": 4,
+    "title": "Gothic Victorian Necklace and Choker Set with Bracelet",
+    "category": "Gothic Jewelry",
+    "price": "$90",
+    "image": "https://images.pexels.com/photos/30936712/pexels-photo-30936712.jpeg?_gl=1*rqa1xt*_ga*MTE1NjI2Mzk3NC4xNzYxMjczMDIw*_ga_8JE65Q40S6*czE3NjE0NTkyNzkkbzMkZzEkdDE3NjE0NTk0ODQkajI5JGwwJGgw",
+    "description": "An elegant handcrafted Victorian gothic jewelry set adorned with intricate detailing- the perfect accent for a darkly romantic wardrobe.",
+    "details": [
+      "Handmade Victorian-inspired pieces",
+      "Museum-quality craftsmanship",
+      "Limited quantity available"
+    ],
+    "dimensions": "15-inch length",
+    "materials": "Black fabric, bronze and silver metals",
+    "themes": ["gothic", "gothic romanticism", "whimsygoth"]
+  },
+  {
+    "id": 5,
+    "title": "Haunted Rose Musk Candle",
+    "category": "Lighting",
+    "price": "$55",
+    "image": "https://cdn.pixabay.com/photo/2012/02/25/19/12/animal-16976_1280.jpg",
+    "description": "A hauntingly beautiful rose musk candle with notes of pomegranate and beeswax. Its soft glow and gothic aroma fill the air with the timeless essence of a moonlit stroll.",
+    "details": [
+      "Rose-scented musk with notes of pomegranate",
+      "Long-lasting burn time",
+      "Crafted from 100% natural beeswax"
+    ],
+    "dimensions": "8\" H × 2\" W (22 oz)",
+    "materials": "Beeswax, rose musk, pomegranate essence",
+    "themes": ["gothic horror", "gothic", "creepy cottagecore"]
+  },
+  {
+    "id": 6,
+    "title": "Photograph of Glass Conservatory",
+    "category": "Photography",
+    "price": "$200",
+    "image": "https://images.pexels.com/photos/27731732/pexels-photo-27731732.jpeg?_gl=1*yy3t6i*_ga*MTE1NjI2Mzk3NC4xNzYxMjczMDIw*_ga_8JE65Q40S6*czE3NjE0NTkyNzkkbzMkZzEkdDE3NjE0NTk1NjYkajYwJGwwJGgw",
+    "description": "A captivating photograph capturing the ethereal beauty of a gothic-inspired glass conservatory.",
+    "details": [
+      "Authentic and inspirational imagery",
+      "Museum-quality print",
+      "Unique architectural perspective"
+    ],
+    "dimensions": "18\" H × 12\" W × 6\" D",
+    "materials": "Printed on archival paper, framed in wood",
+    "themes": ["creepy cottagecore", "gothic romanticism"]
+  },
+  {
+    "id": 7,
+    "title": "Velvet Gothic-Inspired Armchair",
+    "category": "Furniture",
+    "price": "$3,250",
+    "image": "https://i.pinimg.com/1200x/4e/1b/0c/4e1b0c0df8b3c15cf3a36f82b1ab618e.jpg",
+    "description": "An opulent Victorian-inspired armchair upholstered in deep burgundy velvet. Hand-carved mahogany details and brass accents elevate its timeless gothic elegance.",
+    "details": [
+      "Luxury velvet upholstery",
+      "Hand-carved mahogany frame",
+      "Brass decorative elements",
+      "High-density foam cushioning"
+    ],
+    "dimensions": "42\" H × 32\" W × 34\" D",
+    "materials": "Mahogany wood, velvet fabric, brass accents",
+    "themes": ["gothic romanticism", "whimsygoth"]
+  },
+  {
+    "id": 8,
+    "title": "Crystal Reverie Chandelier",
+    "category": "Black and White Photography",
+    "price": "$100",
+    "image": "https://images.pexels.com/photos/12871433/pexels-photo-12871433.jpeg?_gl=1*h690nk*_ga*MTE1NjI2Mzk3NC4xNzYxMjczMDIw*_ga_8JE65Q40S6*czE3NjE0NTkyNzkkbzMkZzEkdDE3NjE0NTk2MzIkajYwJGwwJGgw",
+    "description": "A stunning black-and-white photograph of a crystal chandelier, its hundreds of hand-cut prisms catching and refracting light into ethereal shadows within a gothic cathedral setting.",
+    "details": ["Professional fine art photography"],
+    "dimensions": "36\" H × 30\" Dia",
+    "materials": "Printed on archival paper, black metal frame",
+    "themes": ["gothic", "unseelie court"]
+  },
+  {
+    "id": 9,
+    "title": "Portrait of a Lady with Flowers",
+    "category": "Original Photography",
+    "price": "$250",
+    "image": "https://images.pexels.com/photos/6770759/pexels-photo-6770759.jpeg?_gl=1*15bwr98*_ga*MTE1NjI2Mzk3NC4xNzYxMjczMDIw*_ga_8JE65Q40S6*czE3NjE0NTkyNzkkbzMkZzEkdDE3NjE0NTk2NDckajQ1JGwwJGgw",
+    "description": "A hauntingly beautiful portrait that captures the essence of romantic melancholy. This photograph, reminiscent of the Renaissance era, depicts a woman draped in flowers, evoking the warmth and intimacy of an oil painting.",
+    "details": [
+      "Original photography",
+      "Renaissance-inspired composition",
+      "Ornate vintage-style frame included",
+      "Certificate of authenticity"
+    ],
+    "dimensions": "30\" H × 24\" W",
+    "materials": "Photographic paper, gilded wood frame",
+    "themes": ["creepy cottagecore"]
+  }
+]
