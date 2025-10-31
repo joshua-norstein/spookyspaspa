@@ -56,7 +56,7 @@
   },
  "scripts": {
     "dev": "vite",
-    "build": "chmod +x node_modules/.bin/vite && vite build build --output public",
+    "build": "vite build",
     "preview": "vite preview"
   }
 }
