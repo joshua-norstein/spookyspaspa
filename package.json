@@ -52,11 +52,11 @@
     "@types/react": "^19.2.2",
     "@types/react-dom": "^19.2.2",
     "@vitejs/plugin-react-swc": "^3.11.0",
-    "vite": "^6.4.1"
+    "vite": "^6.4.5"
   },
-  "scripts": {
+ "scripts": {
     "dev": "vite",
-    "build": "npm run build",
+    "build": "vite build",
     "preview": "vite preview"
   }
 }
